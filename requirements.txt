@@ -1,8 +1,18 @@
+# App principal
 streamlit
 pandas
 matplotlib
+
+# Web scraping com Selenium
 selenium
-undetected-chromedriver
 webdriver-manager
 fake-useragent
+
+# Web scraping com Playwright
 playwright
+
+# Logs e manipulação de arquivos
+tqdm
+
+# (opcional) Se o arquivo do IBAMA for Excel
+openpyxl
