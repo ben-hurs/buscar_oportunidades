@@ -7,8 +7,9 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
+from fake_useragent import UserAgent
 
 # Configuração de logging
 logging.basicConfig(
@@ -18,22 +19,28 @@ logging.basicConfig(
 
 def consultar_pgfn(cnpj, headless=True, timeout=30):
     """
-    Consulta a lista de devedores da PGFN com Selenium + ChromeDriver padrão
+    Consulta a lista de devedores da PGFN com user-agent aleatório.
 
     Args:
         cnpj (str): CNPJ a ser consultado
-        headless (bool): Executa ou não em modo headless
+        headless (bool): Executa em modo headless
         timeout (int): Tempo máximo de espera
 
     Returns:
         dict: Resultado da consulta
     """
+    # Gera um user-agent aleatório
+    ua = UserAgent()
+    user_agent = ua.random
+
+    # Configura o Chrome
     options = Options()
     if headless:
-        options.add_argument("--headless=new")  # Compatível com Chrome 109+
+        options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--window-size=1920,1080")
+    options.add_argument(f'user-agent={user_agent}')
 
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
@@ -46,7 +53,6 @@ def consultar_pgfn(cnpj, headless=True, timeout=30):
         input_cnpj = wait.until(EC.presence_of_element_located((By.ID, "identificacaoInput")))
         input_cnpj.clear()
 
-        # Digitação suave
         for char in cnpj:
             input_cnpj.send_keys(char)
             time.sleep(0.1)
@@ -60,13 +66,11 @@ def consultar_pgfn(cnpj, headless=True, timeout=30):
             try:
                 mensagem = driver.find_element(By.CSS_SELECTOR, "p.total-mensagens")
                 if "Nenhum registro foi encontrado" in mensagem.text:
-                    logging.info("Nenhuma dívida encontrada")
                     return {"status": "sem divida"}
 
                 linha = driver.find_element(By.CSS_SELECTOR, "tr.ng-star-inserted")
                 colunas = linha.find_elements(By.TAG_NAME, "td")
                 if len(colunas) >= 4:
-                    logging.info("Dívida encontrada")
                     return {
                         "status": "com divida",
                         "cnpj": colunas[1].text.strip(),
@@ -75,9 +79,7 @@ def consultar_pgfn(cnpj, headless=True, timeout=30):
                     }
             except NoSuchElementException:
                 time.sleep(1)
-                continue
 
-        logging.warning("Timeout ao aguardar resultados")
         return {"status": "erro", "mensagem": "Timeout ao aguardar resultados"}
 
     except Exception as e:

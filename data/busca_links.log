@@ -209,3 +209,44 @@
 2025-04-17 11:51:07,710 - INFO - Aguardando resultados...
 2025-04-17 11:51:08,784 - INFO - Nenhuma dívida encontrada
 2025-04-17 11:51:09,240 - INFO - Navegador fechado
+2025-04-17 14:55:22,178 - INFO - ====== WebDriver manager ======
+2025-04-17 14:55:23,043 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-17 14:55:23,240 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-17 14:55:23,364 - INFO - Driver [C:\Users\Ben-Hur\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-17 14:55:24,755 - INFO - Acessando o site da PGFN...
+2025-04-17 14:55:32,247 - INFO - Aguardando resultados...
+2025-04-17 14:56:02,977 - WARNING - Timeout ao aguardar resultados
+2025-04-17 14:56:05,147 - INFO - Navegador fechado
+2025-04-17 14:56:05,149 - INFO - ====== WebDriver manager ======
+2025-04-17 14:56:05,966 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-17 14:56:06,102 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-17 14:56:06,240 - INFO - Driver [C:\Users\Ben-Hur\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-17 14:56:07,341 - INFO - Acessando o site da PGFN...
+2025-04-17 14:56:14,748 - INFO - Aguardando resultados...
+2025-04-17 14:56:32,146 - ERROR - Erro durante a consulta: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=135.0.7049.85)
+Stacktrace:
+	GetHandleVerifier [0x004E8073+60707]
+	GetHandleVerifier [0x004E80B4+60772]
+	(No symbol) [0x00310683]
+	(No symbol) [0x002FFED0]
+	(No symbol) [0x0031DD3F]
+	(No symbol) [0x00383D7F]
+	(No symbol) [0x0039E129]
+	(No symbol) [0x0037CE46]
+	(No symbol) [0x0034C5D3]
+	(No symbol) [0x0034D424]
+	GetHandleVerifier [0x0072BB53+2435075]
+	GetHandleVerifier [0x007270F3+2416035]
+	GetHandleVerifier [0x0074349C+2531660]
+	GetHandleVerifier [0x004FF145+155125]
+	GetHandleVerifier [0x00505AED+182173]
+	GetHandleVerifier [0x004EF948+91640]
+	GetHandleVerifier [0x004EFAF0+92064]
+	GetHandleVerifier [0x004DA5B0+4704]
+	BaseThreadInitThunk [0x7539FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x772382AE+286]
+	RtlGetAppContainerNamedObjectPath [0x7723827E+238]
+
+2025-04-17 14:56:34,225 - INFO - Navegador fechado
