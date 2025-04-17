@@ -1,3 +1,8 @@
 streamlit
 pandas
+matplotlib
+selenium
+undetected-chromedriver
+webdriver-manager
+fake-useragent
 playwright
