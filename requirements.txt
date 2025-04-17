@@ -14,5 +14,3 @@ playwright
 # Logs e manipulação de arquivos
 tqdm
 
-# (opcional) Se o arquivo do IBAMA for Excel
-openpyxl
