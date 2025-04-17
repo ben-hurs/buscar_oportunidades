@@ -2,7 +2,6 @@
 streamlit
 pandas
 matplotlib
-python-3.10
 
 # Web scraping com Selenium
 selenium
