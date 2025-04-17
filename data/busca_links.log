@@ -1,0 +1,211 @@
+2025-04-16 14:28:06,549 - INFO - Retornando dados em cache para natura
+2025-04-16 14:28:06,552 - INFO - Coletando detalhes de 133 processos para 'natura'
+2025-04-16 14:29:27,694 - INFO - Retornando dados em cache para natura
+2025-04-16 14:29:27,697 - INFO - Coletando detalhes de 133 processos para 'natura'
+2025-04-16 14:39:01,941 - INFO - Retornando dados em cache para natura
+2025-04-16 14:39:01,945 - INFO - Coletando detalhes de 133 processos para 'natura'
+2025-04-16 14:39:50,030 - WARNING - Timeout ao acessar https://esaj.tjce.jus.br/cpopg/show.do?processo.codigo=0Y0000R5H0000&processo.foro=34&conversationId=&cbPesquisa=NMPARTE&dadosConsulta.valorConsulta=natura&cdForo=-1&paginaConsulta=1 - tentando recarregar
+2025-04-16 14:45:18,139 - INFO - Retornando dados em cache para natura
+2025-04-16 14:45:18,142 - INFO - Coletando detalhes de 133 processos para 'natura'
+2025-04-16 15:45:39,217 - WARNING - Nenhum resultado em https://esaj.tjsp.jus.br para "natura"
+2025-04-16 15:45:40,636 - INFO - Encontrados 25 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 15:45:42,447 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 15:45:43,505 - INFO - Encontrados 25 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 15:45:45,283 - INFO - Encontrados 3 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 15:45:45,294 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 15:45:47,161 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 15:45:47,814 - INFO - Encontrados 5 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 15:45:48,033 - INFO - Total de 133 processos encontrados
+2025-04-16 15:45:48,062 - INFO - Coletando detalhes de 133 processos para 'natura'
+2025-04-16 15:49:42,272 - INFO - Retornando dados em cache para natura
+2025-04-16 15:49:42,275 - INFO - Coletando detalhes de 133 processos para 'natura'
+2025-04-16 15:55:10,639 - INFO - Encontrados 25 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 15:55:10,644 - WARNING - Nenhum resultado em https://esaj.tjsp.jus.br para "natura"
+2025-04-16 15:55:12,652 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 15:55:13,547 - INFO - Encontrados 25 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 15:55:14,157 - INFO - Encontrados 3 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 15:55:15,306 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 15:55:17,182 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 15:55:17,790 - INFO - Encontrados 5 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 15:55:17,998 - INFO - Total de 133 processos encontrados
+2025-04-16 15:55:18,028 - INFO - Coletando detalhes de 133 processos para 'natura'
+2025-04-16 16:05:18,685 - WARNING - Nenhum resultado em https://esaj.tjsp.jus.br para "natura"
+2025-04-16 16:05:18,820 - INFO - Encontrados 25 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 16:05:20,867 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 16:05:21,759 - INFO - Encontrados 25 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 16:05:23,521 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 16:05:23,535 - INFO - Encontrados 3 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 16:05:25,331 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 16:05:25,962 - INFO - Encontrados 5 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 16:05:26,155 - INFO - Total de 133 processos encontrados
+2025-04-16 16:05:26,173 - ERROR - Erro ao iniciar o loop de eventos: coletar_todos_detalhes() got an unexpected keyword argument 'max_concorrentes'
+2025-04-16 16:05:55,748 - INFO - Encontrados 22 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 16:05:58,328 - INFO - Encontrados 25 processos na página atual de https://esaj.tjsp.jus.br
+2025-04-16 16:05:58,439 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 16:06:00,403 - INFO - Encontrados 10 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 16:06:00,653 - INFO - Encontrados 25 processos na página atual de https://esaj.tjsp.jus.br
+2025-04-16 16:06:02,480 - INFO - Encontrados 25 processos na página atual de https://esaj.tjsp.jus.br
+2025-04-16 16:06:04,324 - INFO - Encontrados 25 processos na página atual de https://esaj.tjsp.jus.br
+2025-04-16 16:06:06,117 - INFO - Encontrados 25 processos na página atual de https://esaj.tjsp.jus.br
+2025-04-16 16:06:06,618 - INFO - Encontrados 4 processos na página atual de https://esaj.tjsp.jus.br
+2025-04-16 16:06:06,830 - INFO - Total de 186 processos encontrados
+2025-04-16 16:06:06,850 - ERROR - Erro ao iniciar o loop de eventos: coletar_todos_detalhes() got an unexpected keyword argument 'max_concorrentes'
+2025-04-16 16:08:34,347 - INFO - Retornando dados em cache para coca cola
+2025-04-16 16:08:34,350 - INFO - Coletando detalhes de 186 processos para 'coca cola'
+2025-04-16 16:13:23,381 - WARNING - Nenhum resultado em https://esaj.tjsp.jus.br para "natura"
+2025-04-16 16:13:24,767 - INFO - Encontrados 25 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 16:13:25,761 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 16:13:28,527 - INFO - Encontrados 25 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 16:13:28,780 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 16:13:30,712 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 16:13:30,717 - INFO - Encontrados 3 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 16:13:31,307 - INFO - Encontrados 5 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 16:13:31,515 - INFO - Total de 133 processos encontrados
+2025-04-16 16:13:31,545 - INFO - Coletando detalhes de 133 processos para 'natura'
+2025-04-16 16:14:47,475 - INFO - Retornando dados em cache para coca cola
+2025-04-16 16:14:47,478 - INFO - Coletando detalhes de 186 processos para 'coca cola'
+2025-04-16 16:23:33,854 - INFO - Encontrados 22 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 16:23:36,508 - INFO - Encontrados 25 processos na página atual de https://esaj.tjsp.jus.br
+2025-04-16 16:23:36,514 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 16:23:38,530 - INFO - Encontrados 25 processos na página atual de https://esaj.tjsp.jus.br
+2025-04-16 16:23:38,643 - INFO - Encontrados 10 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 16:23:40,320 - INFO - Encontrados 25 processos na página atual de https://esaj.tjsp.jus.br
+2025-04-16 16:23:42,110 - INFO - Encontrados 25 processos na página atual de https://esaj.tjsp.jus.br
+2025-04-16 16:23:43,777 - INFO - Encontrados 25 processos na página atual de https://esaj.tjsp.jus.br
+2025-04-16 16:23:44,299 - INFO - Encontrados 4 processos na página atual de https://esaj.tjsp.jus.br
+2025-04-16 16:23:44,502 - INFO - Total de 186 processos encontrados
+2025-04-16 16:23:44,535 - INFO - Coletando detalhes de 186 processos para 'coca cola'
+2025-04-16 18:00:39,782 - INFO - patching driver executable C:\Users\Ben-Hur\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-16 18:00:41,039 - INFO - setting properties for headless
+2025-04-16 18:00:41,076 - INFO - Acessando o site da PGFN...
+2025-04-16 18:00:45,605 - INFO - Preenchendo CNPJ...
+2025-04-16 18:00:47,852 - INFO - Clicando no botão de consulta...
+2025-04-16 18:00:47,944 - INFO - Aguardando resultados...
+2025-04-16 18:00:49,221 - INFO - Nenhuma dívida encontrada
+2025-04-16 18:00:50,054 - INFO - Navegador fechado
+2025-04-16 18:02:55,898 - INFO - patching driver executable C:\Users\Ben-Hur\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-16 18:02:56,919 - INFO - setting properties for headless
+2025-04-16 18:02:56,930 - INFO - Acessando o site da PGFN...
+2025-04-16 18:03:19,410 - INFO - Preenchendo CNPJ...
+2025-04-16 18:03:21,921 - INFO - Clicando no botão de consulta...
+2025-04-16 18:03:21,952 - INFO - Aguardando resultados...
+2025-04-16 18:03:24,292 - INFO - Dívida encontrada
+2025-04-16 18:03:24,828 - INFO - Navegador fechado
+2025-04-16 18:07:41,917 - INFO - patching driver executable C:\Users\Ben-Hur\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-16 18:07:42,922 - INFO - setting properties for headless
+2025-04-16 18:07:42,933 - INFO - Acessando o site da PGFN...
+2025-04-16 18:07:50,109 - INFO - Preenchendo CNPJ...
+2025-04-16 18:07:52,738 - INFO - Clicando no botão de consulta...
+2025-04-16 18:07:52,769 - INFO - Aguardando resultados...
+2025-04-16 18:07:54,922 - INFO - Dívida encontrada
+2025-04-16 18:07:55,699 - INFO - Navegador fechado
+2025-04-16 18:08:42,893 - INFO - patching driver executable C:\Users\Ben-Hur\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-16 18:08:43,860 - INFO - setting properties for headless
+2025-04-16 18:08:43,886 - INFO - Acessando o site da PGFN...
+2025-04-16 18:08:46,997 - INFO - Preenchendo CNPJ...
+2025-04-16 18:08:49,120 - INFO - Clicando no botão de consulta...
+2025-04-16 18:08:49,159 - INFO - Aguardando resultados...
+2025-04-16 18:08:51,214 - INFO - Nenhuma dívida encontrada
+2025-04-16 18:08:51,806 - INFO - Navegador fechado
+2025-04-16 18:12:36,744 - INFO - patching driver executable C:\Users\Ben-Hur\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-16 18:12:37,591 - INFO - setting properties for headless
+2025-04-16 18:12:37,614 - INFO - Acessando o site da PGFN...
+2025-04-16 18:12:40,841 - INFO - Preenchendo CNPJ...
+2025-04-16 18:12:44,058 - INFO - Clicando no botão de consulta...
+2025-04-16 18:12:44,115 - INFO - Aguardando resultados...
+2025-04-16 18:13:14,705 - WARNING - Timeout ao aguardar resultados
+2025-04-16 18:13:15,079 - INFO - Navegador fechado
+2025-04-16 18:13:16,493 - INFO - patching driver executable C:\Users\Ben-Hur\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-16 18:13:17,310 - INFO - Acessando o site da PGFN...
+2025-04-16 18:13:23,627 - INFO - Preenchendo CNPJ...
+2025-04-16 18:13:27,049 - INFO - Clicando no botão de consulta...
+2025-04-16 18:13:27,095 - INFO - Aguardando resultados...
+2025-04-16 18:13:28,241 - INFO - Nenhuma dívida encontrada
+2025-04-16 18:13:28,687 - INFO - Navegador fechado
+2025-04-16 18:29:41,498 - WARNING - Nenhum resultado em https://esaj.tjsp.jus.br para "natura"
+2025-04-16 18:29:43,005 - INFO - Encontrados 25 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 18:29:45,300 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 18:29:46,831 - INFO - Encontrados 25 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 18:29:48,942 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 18:29:49,002 - INFO - Encontrados 3 processos na página atual de https://www2.tjal.jus.br
+2025-04-16 18:29:51,157 - INFO - Encontrados 25 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 18:29:51,793 - INFO - Encontrados 5 processos na página atual de https://esaj.tjce.jus.br
+2025-04-16 18:29:52,048 - INFO - Total de 133 processos encontrados
+2025-04-16 18:29:52,082 - INFO - Coletando detalhes de 133 processos para 'natura'
+2025-04-16 20:30:07,704 - INFO - patching driver executable C:\Users\Ben-Hur\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-16 20:30:08,648 - INFO - setting properties for headless
+2025-04-16 20:30:08,657 - INFO - Acessando o site da PGFN...
+2025-04-16 20:30:11,982 - INFO - Preenchendo CNPJ...
+2025-04-16 20:30:15,891 - INFO - Clicando no botão de consulta...
+2025-04-16 20:30:15,926 - INFO - Aguardando resultados...
+2025-04-16 20:30:17,016 - INFO - Nenhuma dívida encontrada
+2025-04-16 20:30:17,677 - INFO - Navegador fechado
+2025-04-16 20:33:54,690 - INFO - ensuring close
+2025-04-16 20:33:54,691 - INFO - ensuring close
+2025-04-16 20:33:54,693 - INFO - ensuring close
+2025-04-16 20:33:54,694 - INFO - ensuring close
+2025-04-16 20:33:54,696 - INFO - ensuring close
+2025-04-16 20:33:54,697 - INFO - ensuring close
+2025-04-16 20:33:54,698 - INFO - ensuring close
+2025-04-16 20:39:42,144 - INFO - patching driver executable C:\Users\Ben-Hur\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-16 20:39:42,974 - INFO - setting properties for headless
+2025-04-16 20:39:42,984 - INFO - Acessando o site da PGFN...
+2025-04-16 20:39:46,239 - INFO - Preenchendo CNPJ...
+2025-04-16 20:39:49,848 - INFO - Clicando no botão de consulta...
+2025-04-16 20:39:49,891 - INFO - Aguardando resultados...
+2025-04-16 20:39:51,069 - INFO - Nenhuma dívida encontrada
+2025-04-16 20:39:51,522 - INFO - Navegador fechado
+2025-04-16 20:47:20,263 - INFO - patching driver executable C:\Users\Ben-Hur\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-16 20:47:21,057 - INFO - setting properties for headless
+2025-04-16 20:47:21,070 - INFO - Acessando o site da PGFN...
+2025-04-16 20:47:25,052 - INFO - Preenchendo CNPJ...
+2025-04-16 20:47:26,588 - INFO - Clicando no botão de consulta...
+2025-04-16 20:47:56,719 - ERROR - Erro durante a consulta: Message: 
+
+2025-04-16 20:47:57,055 - INFO - Navegador fechado
+2025-04-16 20:47:58,606 - INFO - patching driver executable C:\Users\Ben-Hur\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-16 20:47:59,433 - INFO - Acessando o site da PGFN...
+2025-04-16 20:48:03,012 - INFO - Preenchendo CNPJ...
+2025-04-16 20:48:04,565 - INFO - Clicando no botão de consulta...
+2025-04-16 20:48:35,019 - ERROR - Erro durante a consulta: Message: 
+
+2025-04-16 20:48:35,376 - INFO - Navegador fechado
+2025-04-16 20:48:45,425 - INFO - patching driver executable C:\Users\Ben-Hur\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-16 20:48:46,226 - INFO - setting properties for headless
+2025-04-16 20:48:46,237 - INFO - Acessando o site da PGFN...
+2025-04-16 20:48:50,930 - INFO - Preenchendo CNPJ...
+2025-04-16 20:48:52,924 - INFO - Clicando no botão de consulta...
+2025-04-16 20:48:52,974 - INFO - Aguardando resultados...
+2025-04-16 20:48:54,157 - INFO - Nenhuma dívida encontrada
+2025-04-16 20:48:54,623 - INFO - Navegador fechado
+2025-04-17 09:31:55,687 - INFO - Retornando dados em cache para coca cola
+2025-04-17 09:31:55,689 - INFO - Coletando detalhes de 186 processos para 'coca cola'
+2025-04-17 11:05:03,700 - INFO - Retornando dados em cache para natura
+2025-04-17 11:05:03,702 - INFO - Coletando detalhes de 133 processos para 'natura'
+2025-04-17 11:06:24,346 - INFO - ====== WebDriver manager ======
+2025-04-17 11:06:25,216 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-17 11:06:25,416 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-17 11:06:25,536 - INFO - There is no [win64] chromedriver "135.0.7049.95" for browser google-chrome "135.0.7049" in cache
+2025-04-17 11:06:25,536 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-17 11:06:25,838 - INFO - WebDriver version 135.0.7049.95 selected
+2025-04-17 11:06:25,842 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.95/win32/chromedriver-win32.zip
+2025-04-17 11:06:25,842 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/135.0.7049.95/win32/chromedriver-win32.zip
+2025-04-17 11:06:26,032 - INFO - Driver downloading response is 200
+2025-04-17 11:06:27,002 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-17 11:06:28,213 - INFO - Driver has been saved in cache [C:\Users\Ben-Hur\.wdm\drivers\chromedriver\win64\135.0.7049.95]
+2025-04-17 11:50:21,928 - INFO - patching driver executable C:\Users\Ben-Hur\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-17 11:50:23,587 - INFO - setting properties for headless
+2025-04-17 11:50:23,596 - INFO - Acessando o site da PGFN...
+2025-04-17 11:50:31,998 - INFO - Preenchendo CNPJ...
+2025-04-17 11:50:34,764 - INFO - Clicando no botão de consulta...
+2025-04-17 11:50:34,866 - INFO - Aguardando resultados...
+2025-04-17 11:50:37,139 - INFO - Dívida encontrada
+2025-04-17 11:50:37,505 - INFO - Navegador fechado
+2025-04-17 11:51:00,688 - INFO - patching driver executable C:\Users\Ben-Hur\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-17 11:51:01,573 - INFO - setting properties for headless
+2025-04-17 11:51:01,585 - INFO - Acessando o site da PGFN...
+2025-04-17 11:51:04,843 - INFO - Preenchendo CNPJ...
+2025-04-17 11:51:07,654 - INFO - Clicando no botão de consulta...
+2025-04-17 11:51:07,710 - INFO - Aguardando resultados...
+2025-04-17 11:51:08,784 - INFO - Nenhuma dívida encontrada
+2025-04-17 11:51:09,240 - INFO - Navegador fechado
