@@ -345,3 +345,9 @@ NotImplementedError
 2025-04-17 16:20:07,034 - INFO - Navegador fechado
 2025-04-17 16:20:36,478 - INFO - Retornando dados em cache para natura
 2025-04-17 16:20:36,480 - INFO - Coletando detalhes de 133 processos para 'natura'
+2025-04-17 16:21:36,830 - INFO - ====== WebDriver manager ======
+2025-04-17 16:21:37,645 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-17 16:21:37,771 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-17 16:21:37,893 - INFO - Driver [C:\Users\Ben-Hur\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-17 16:25:52,245 - INFO - ensuring close
+2025-04-17 16:25:52,246 - INFO - ensuring close
