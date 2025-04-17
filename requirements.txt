@@ -7,6 +7,7 @@ matplotlib
 selenium
 webdriver-manager
 fake-useragent
+undetected_chromedriver
 
 # Web scraping com Playwright
 playwright
