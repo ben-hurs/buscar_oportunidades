@@ -420,3 +420,5 @@ Traceback (most recent call last):
 NotImplementedError
 2025-04-17 17:35:49,408 - ERROR - Erro ao iniciar o loop de eventos: 
 2025-04-17 17:39:28,321 - ERROR - Erro ao iniciar o loop de eventos: There is no current event loop in thread 'ScriptRunner.scriptThread'.
+2025-04-17 17:42:20,992 - INFO - Retornando dados em cache para natura
+2025-04-17 17:42:20,995 - INFO - Coletando detalhes de 133 processos para 'natura'
