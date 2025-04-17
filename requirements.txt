@@ -1,17 +1,20 @@
-# App principal
-streamlit
-pandas
-matplotlib
+# Navegadores automatizados
+selenium==4.17.2
+undetected-chromedriver==3.5.5
+webdriver-manager==3.8.6
+playwright==1.43.0
 
-# Web scraping com Selenium
-selenium
-webdriver-manager
-fake-useragent
-undetected_chromedriver
+# Web App e visualização
+streamlit==1.32.2
+matplotlib==3.8.4
 
-# Web scraping com Playwright
-playwright
+# Data Science
+pandas==2.2.1
 
-# Logs e manipulação de arquivos
-tqdm
+# Utilidades
+fake-useragent==1.5.1
 
+# Recomendado (para garantir compatibilidade e funcionamento correto de gráficos e scraping)
+nest_asyncio==1.6.0
+
+# Dependências do Playwright (precisa rodar uma vez: playwright install)

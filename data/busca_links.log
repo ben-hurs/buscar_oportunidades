@@ -299,3 +299,49 @@ Stacktrace:
 2025-04-17 15:04:00,762 - INFO - Dívida encontrada
 2025-04-17 15:04:01,110 - INFO - Navegador fechado
 2025-04-17 15:55:32,311 - INFO - ensuring close
+2025-04-17 16:14:49,680 - INFO - patching driver executable C:\Users\Ben-Hur\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-17 16:14:50,558 - INFO - setting properties for headless
+2025-04-17 16:14:50,588 - INFO - Acessando o site da PGFN...
+2025-04-17 16:14:59,783 - INFO - Preenchendo CNPJ...
+2025-04-17 16:15:02,758 - INFO - Clicando no botão de consulta...
+2025-04-17 16:15:02,803 - INFO - Aguardando resultados...
+2025-04-17 16:15:05,093 - INFO - Dívida encontrada
+2025-04-17 16:15:05,443 - INFO - Navegador fechado
+2025-04-17 16:17:32,595 - INFO - ensuring close
+2025-04-17 16:17:43,529 - INFO - patching driver executable C:\Users\Ben-Hur\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-17 16:17:44,359 - INFO - setting properties for headless
+2025-04-17 16:17:44,368 - INFO - Acessando o site da PGFN...
+2025-04-17 16:17:48,324 - INFO - Preenchendo CNPJ...
+2025-04-17 16:17:50,966 - INFO - Clicando no botão de consulta...
+2025-04-17 16:17:51,031 - INFO - Aguardando resultados...
+2025-04-17 16:17:53,289 - INFO - Dívida encontrada
+2025-04-17 16:17:53,627 - INFO - Navegador fechado
+2025-04-17 16:17:58,606 - INFO - Retornando dados em cache para natura
+2025-04-17 16:17:58,609 - INFO - Coletando detalhes de 133 processos para 'natura'
+2025-04-17 16:17:58,610 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-173' coro=<Connection.run() done, defined at C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_connection.py:272> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_connection.py", line 279, in run
+    await self._transport.connect()
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\asyncio\subprocess.py", line 218, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1652, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 493, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-04-17 16:17:58,663 - ERROR - Erro ao iniciar o loop de eventos: 
+2025-04-17 16:19:54,972 - INFO - patching driver executable C:\Users\Ben-Hur\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-04-17 16:19:55,830 - INFO - setting properties for headless
+2025-04-17 16:19:55,841 - INFO - Acessando o site da PGFN...
+2025-04-17 16:20:01,611 - INFO - Preenchendo CNPJ...
+2025-04-17 16:20:04,508 - INFO - Clicando no botão de consulta...
+2025-04-17 16:20:04,560 - INFO - Aguardando resultados...
+2025-04-17 16:20:06,678 - INFO - Dívida encontrada
+2025-04-17 16:20:07,034 - INFO - Navegador fechado
+2025-04-17 16:20:36,478 - INFO - Retornando dados em cache para natura
+2025-04-17 16:20:36,480 - INFO - Coletando detalhes de 133 processos para 'natura'
