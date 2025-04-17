@@ -354,3 +354,69 @@ NotImplementedError
 2025-04-17 17:07:30,342 - INFO - Retornando dados em cache para natura
 2025-04-17 17:07:30,345 - INFO - Coletando detalhes de 133 processos para 'natura'
 2025-04-17 17:08:22,426 - ERROR - Erro ao iniciar o loop de eventos: name 'buscar_investigado_mpt' is not defined
+2025-04-17 17:18:52,610 - INFO - Retornando dados em cache para natura
+2025-04-17 17:18:52,612 - INFO - Coletando detalhes de 133 processos para 'natura'
+2025-04-17 17:19:46,280 - INFO - ====== WebDriver manager ======
+2025-04-17 17:19:47,115 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-17 17:19:47,273 - INFO - Get LATEST chromedriver version for google-chrome
+2025-04-17 17:19:47,390 - INFO - Driver [C:\Users\Ben-Hur\.wdm\drivers\chromedriver\win64\135.0.7049.95\chromedriver-win32/chromedriver.exe] found in cache
+2025-04-17 17:23:49,107 - INFO - Retornando dados em cache para natura
+2025-04-17 17:23:49,109 - INFO - Coletando detalhes de 133 processos para 'natura'
+2025-04-17 17:23:49,110 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-3703' coro=<Connection.run() done, defined at C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_connection.py:272> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_connection.py", line 279, in run
+    await self._transport.connect()
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\asyncio\subprocess.py", line 218, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1652, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 493, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-04-17 17:23:49,113 - ERROR - Erro ao iniciar o loop de eventos: 
+2025-04-17 17:25:10,306 - INFO - Retornando dados em cache para natura
+2025-04-17 17:25:10,308 - INFO - Coletando detalhes de 133 processos para 'natura'
+2025-04-17 17:25:10,309 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-85' coro=<Connection.run() done, defined at C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_connection.py:272> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_connection.py", line 279, in run
+    await self._transport.connect()
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\asyncio\subprocess.py", line 218, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1652, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 493, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-04-17 17:25:10,313 - ERROR - Erro ao iniciar o loop de eventos: 
+2025-04-17 17:35:49,383 - INFO - Retornando dados em cache para natura
+2025-04-17 17:35:49,386 - INFO - Coletando detalhes de 133 processos para 'natura'
+2025-04-17 17:35:49,386 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-147' coro=<Connection.run() done, defined at C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_connection.py:272> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py", line 232, in __step
+    result = coro.send(None)
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_connection.py", line 279, in run
+    await self._transport.connect()
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\asyncio\subprocess.py", line 218, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1652, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+  File "C:\Users\Ben-Hur\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 493, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-04-17 17:35:49,408 - ERROR - Erro ao iniciar o loop de eventos: 
+2025-04-17 17:39:28,321 - ERROR - Erro ao iniciar o loop de eventos: There is no current event loop in thread 'ScriptRunner.scriptThread'.

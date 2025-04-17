@@ -1,3 +1,11 @@
+# app.py - Consulta Judicial com PGFN integrado
+try:
+    from fake_useragent import UserAgent
+except ImportError:
+    import subprocess
+    subprocess.run(['pip', 'install', 'fake_useragent'], check=True)
+    from fake_useragent import UserAgent
+
 import streamlit as st
 import asyncio
 import os
@@ -8,7 +16,9 @@ import time
 from datetime import timedelta
 from busca_por_link import buscar_processos_por_nome
 from buscar_detalhes import coletar_todos_detalhes
+from pgfn_service import consultar_pgfn  # Módulo separado para consulta PGFN
 from busca_mpt import buscar_investigado_mpt
+import matplotlib.pyplot as plt
 
 # Carrega a base de multas do IBAMA
 ibama_df = pd.read_csv("ibama multas.csv", dtype=str)
@@ -19,7 +29,7 @@ st.set_page_config(page_title="Consulta Judicial", layout="wide")
 st.title("🔎 Consulta de Processos por Nome da Parte")
 st.markdown("Pesquise processos nos tribunais **TJSP, TJAL e TJCE** usando o nome da parte ou empresa.")
 
-# Função auxiliar
+# Função auxiliar para limpar valores (caso exista em outro módulo)
 def limpar_valor(valor):
     try:
         if isinstance(valor, str):
@@ -36,38 +46,74 @@ with col1:
     buscar_processos = st.button("Buscar processos e extrair detalhes")
 
 with col2:
-    cnpj_input = st.text_input("CNPJ para consulta IBAMA", placeholder="00.000.000/0001-00")
-    consultar_ibama = st.button("Consultar IBAMA")
+    cnpj_input = st.text_input("CNPJ para consulta PGFN e IBAMA", placeholder="00.000.000/0001-00")
+    consultar_divida = st.button("Consultar PGFN")
+    
 
-# === Consulta IBAMA ===
-if consultar_ibama and cnpj_input:
-    try:
-        cnpj_limpo = cnpj_input.replace(".", "").replace("-", "").replace("/", "").strip()
-        coluna_cnpj = None
-        possiveis_nomes = ['CPF_CNPJ', 'CPF/CNPJ', 'CNPJ', 'CPF ou CNPJ', 'CPF_CNPJ_INFRATOR']
-        for nome in possiveis_nomes:
-            if nome in ibama_df.columns:
-                coluna_cnpj = nome
-                break
-        if coluna_cnpj is None:
-            st.warning("Não foi possível identificar a coluna de CNPJ no arquivo do IBAMA.")
-        else:
-            ibama_df["__cnpj_limpo__"] = ibama_df[coluna_cnpj].astype(str).str.replace(r"\D", "", regex=True)
-            ibama_filtrado = ibama_df[ibama_df["__cnpj_limpo__"] == cnpj_limpo]
-            if not ibama_filtrado.empty:
-                st.success(f"⚠️ {len(ibama_filtrado)} multa(s) do IBAMA encontradas para este CNPJ.")
-                st.dataframe(ibama_filtrado.drop(columns="__cnpj_limpo__"), use_container_width=True)
-                st.download_button(
-                    label="📥 Baixar multas IBAMA (CSV)",
-                    data=ibama_filtrado.drop(columns="__cnpj_limpo__").to_csv(index=False),
-                    file_name=f"ibama_{cnpj_limpo}.csv",
-                    mime="text/csv"
-                )
+# Consulta PGFN e IBAMA:
+if consultar_divida and cnpj_input:
+    with st.spinner("Consultando PGFN e IBAMA..."):
+        try:
+            # Consulta PGFN
+            resultado = consultar_pgfn(cnpj_input, headless=True)
+            if "version" in resultado.get("mensagem", "").lower():
+                resultado = consultar_pgfn(cnpj_input, headless=True, version_main=None)
+            if resultado["status"] == "erro":
+                resultado = consultar_pgfn(cnpj_input, headless=False)
+
+            # Exibe resultado PGFN
+            if resultado["status"] == "com divida":
+                st.success(f"✅ Dívida na PGFN: {resultado['nome']} — Valor: {resultado['valor']}")
+            elif resultado["status"] == "sem divida":
+                st.info("✅ Nenhuma dívida encontrada na PGFN para este CNPJ.")
             else:
-                st.info("✅ Nenhuma multa encontrada no IBAMA para este CNPJ.")
-    except Exception as e_ibama:
-        st.warning(f"⚠️ Erro ao buscar dados do IBAMA: {str(e_ibama)}")
-        st.warning(f"Colunas disponíveis no arquivo: {list(ibama_df.columns)}")
+                st.warning(f"⚠️ PGFN retornou: {resultado.get('mensagem', 'Erro desconhecido')}")
+
+            # Consulta IBAMA
+            # Consulta IBAMA
+            try:
+                cnpj_limpo = cnpj_input.replace(".", "").replace("-", "").replace("/", "").strip()
+                
+                # Verifica se a coluna CPF_CNPJ existe ou tenta variações comuns
+                coluna_cnpj = None
+                possiveis_nomes = ['CPF_CNPJ', 'CPF/CNPJ', 'CNPJ', 'CPF ou CNPJ', 'CPF_CNPJ_INFRATOR']
+                
+                for nome in possiveis_nomes:
+                    if nome in ibama_df.columns:
+                        coluna_cnpj = nome
+                        break
+                
+                if coluna_cnpj is None:
+                    st.warning("Não foi possível identificar a coluna de CNPJ no arquivo do IBAMA.")
+                else:
+                    # Cria coluna temporária com CNPJ limpo para comparação
+                    ibama_df["__cnpj_limpo__"] = ibama_df[coluna_cnpj].astype(str).str.replace(r"\D", "", regex=True)
+                    ibama_filtrado = ibama_df[ibama_df["__cnpj_limpo__"] == cnpj_limpo]
+
+                    if not ibama_filtrado.empty:
+                        st.success(f"⚠️ {len(ibama_filtrado)} multa(s) do IBAMA encontradas para este CNPJ.")
+                        st.dataframe(ibama_filtrado.drop(columns="__cnpj_limpo__"), use_container_width=True)
+                        st.download_button(
+                            label="📥 Baixar multas IBAMA (CSV)",
+                            data=ibama_filtrado.drop(columns="__cnpj_limpo__").to_csv(index=False),
+                            file_name=f"ibama_{cnpj_limpo}.csv",
+                            mime="text/csv"
+                        )
+                    else:
+                        st.info("✅ Nenhuma multa encontrada no IBAMA para este CNPJ.")
+
+            except Exception as e_ibama:
+                st.warning(f"⚠️ Erro ao buscar dados do IBAMA: {str(e_ibama)}")
+                st.warning(f"Colunas disponíveis no arquivo: {list(ibama_df.columns)}")
+
+            except Exception as e_ibama:
+                st.warning(f"⚠️ Erro ao buscar dados do IBAMA: {e_ibama}")
+
+        except Exception as e:
+            st.error(f"❌ Erro inesperado: {str(e)}")
+
+
+
 
 # === Inicialização do Session State ===
 if "detalhes" not in st.session_state:
@@ -76,30 +122,39 @@ if "erros" not in st.session_state:
     st.session_state.erros = None
 if "links" not in st.session_state:
     st.session_state.links = None
-if "tempos" not in st.session_state:
+if "tempos" not in st.session_state:  # Novo estado para armazenar tempos
     st.session_state.tempos = {}
 
 # === Busca de Processos ===
 if buscar_processos and nome_parte:
     async def run_busca():
         os.makedirs("data", exist_ok=True)
+        
+        # Inicia medição do tempo total
         inicio_total = time.time()
-
+        
+        # Busca de links com medição de tempo
         inicio_links = time.time()
         with st.spinner("🔄 Buscando links dos processos..."):
             links = await buscar_processos_por_nome(nome_parte)
         tempo_links = time.time() - inicio_links
-
+        
+        # Coleta de detalhes com medição de tempo
         inicio_detalhes = time.time()
         with st.spinner("📄 Coletando detalhes dos processos..."):
             detalhes, erros = await coletar_todos_detalhes(nome_parte)
         tempo_detalhes = time.time() - inicio_detalhes
+                
+        # Finaliza medição do tempo total
         tempo_total = time.time() - inicio_total
 
+        # Busca dados no MPT
         with st.spinner("⚖️ Buscando investigações no MPT..."):
             df_mpt = buscar_investigado_mpt(nome_parte)
             st.session_state.df_mpt = df_mpt
 
+        
+        # Armazena os tempos no session state
         st.session_state.tempos = {
             "total": tempo_total,
             "links": tempo_links,
@@ -107,6 +162,7 @@ if buscar_processos and nome_parte:
             "processos_encontrados": len(links),
             "processos_coletados": len(detalhes)
         }
+        
         st.session_state.links = links
         st.session_state.detalhes = detalhes
         st.session_state.erros = erros
@@ -118,7 +174,6 @@ if buscar_processos and nome_parte:
     except Exception as e:
         logging.error(f"Erro ao iniciar o loop de eventos: {e}")
         st.error(f"Erro ao buscar processos: {str(e)}")
-
 
 # === Visualização dos Resultados ===
 if st.session_state.detalhes:
@@ -247,7 +302,9 @@ if st.session_state.detalhes:
         df_valor_vara.columns = ["vara", "valor"]
         st.bar_chart(df_valor_vara, x="vara", y="valor", horizontal=True)
 
+
     # Resultados e download
+    
     st.dataframe(df, use_container_width=True)
     st.download_button(
         "📥 Baixar CSV com detalhes",
