@@ -8,3 +8,4 @@ pytz==2025.2
 six==1.17.0
 typing_extensions==4.13.2
 tzdata==2025.2
+nest-asyncio==1.6.0
