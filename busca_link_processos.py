@@ -105,7 +105,8 @@ async def extrair_links(page, BASE_URL):
 
 async def navegar_paginas(page, BASE_URL, nome_empresa):
     try:
-        await page.goto(BASE_URL + "/cpopg/open.do", timeout=REQUEST_TIMEOUT)
+        await page.goto(BASE_URL + "/cpopg/open.do", timeout=30000, wait_until="domcontentloaded")
+
         await asyncio.sleep(random_delay())
 
         await asyncio.gather(
