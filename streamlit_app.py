@@ -54,7 +54,7 @@ if buscar_processos and nome_parte:
 
         # Busca de links
         inicio_links = time.time()
-        with st.spinner("🔄 Buscando links dos processos..."):
+        with st.spinner("Buscando links dos processos..."):
             links = await buscar_processos_por_nome(nome_parte)
         tempo_links = time.time() - inicio_links
 
