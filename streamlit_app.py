@@ -17,7 +17,7 @@ from busca_link_processos import buscar_processos_por_nome
 from busca_detalhes_processos import coletar_detalhes_concorrente
 import matplotlib.pyplot as plt
 
-os.system("playwright install")
+os.system("playwright install chromium")
 
 
 
